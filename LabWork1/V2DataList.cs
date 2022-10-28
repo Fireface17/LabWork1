@@ -1,5 +1,3 @@
-﻿
-//Fireface17 
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,7 +55,7 @@ namespace LabWork1
         }
         public override string ToString()
         {
-            string str = "V2DataList\n" + base.ToString();
+            string str = "\nV2DataList\n" + base.ToString();
             for(int i = 0; i < Data.Count; i++)
             {
                 str += "\n" + Data[i].ToString();
