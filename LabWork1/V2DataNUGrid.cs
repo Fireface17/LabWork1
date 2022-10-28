@@ -1,5 +1,3 @@
-﻿
-//Fireface17
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +16,7 @@ namespace LabWork1
             Nodes = Array.Empty<float>();
             Values = Array.Empty<Vector2>();
         }
-        int[] StepValue = Array.Empty<int>();
+        public readonly int[] StepValue = Array.Empty<int>();
         public V2DataNUGrid(string String1, DateTime Datetime1, float[] Nodes, FVector2 F) : base(String1, Datetime1)
         {
             this.Nodes = Nodes;
