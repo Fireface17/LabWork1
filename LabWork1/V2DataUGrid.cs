@@ -1,5 +1,3 @@
-﻿
-//Fireface17
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -32,8 +30,8 @@ namespace LabWork1
             }
 
         }
-        public override float MinDistance => Vector2.Distance(Values[1], Values[0]);
-        public static explicit operator V2DataList(V2DataUGrid source)
+        public override float MinDistance => Parameters.Step;
+        public static implicit operator V2DataList(V2DataUGrid source)
         {
             V2DataList v2datalist = new(source.String1, source.Datetime1);
             {
@@ -59,6 +57,4 @@ namespace LabWork1
             return str;
         }
     }
-    
-
 }
